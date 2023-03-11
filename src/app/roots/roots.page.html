@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Raices</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let root of roots; index as i">
+    <p> x{{i+1}} = {{roots[i]}}</p>
+  </ion-card>
+</ion-content>

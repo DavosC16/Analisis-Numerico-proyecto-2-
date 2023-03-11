@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Polinomio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-row>
+      <ion-col *ngFor="let co of coef; let i=index">
+        <ion-input type="number" [(ngModel)]="coef[i]"></ion-input>
+        <p>x^{{n-i}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-button (click)="Click()">Aceptar</ion-button>
+</ion-content>
